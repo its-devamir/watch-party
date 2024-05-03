@@ -1,0 +1,23 @@
+#videoPlayer {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 0 auto;
+}
+
+#chat {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+#messages {
+    height: 150px;
+    overflow-y: auto;
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+}
+
+#input-container, #chat input, #chat button {
+    width: 100%;
+}

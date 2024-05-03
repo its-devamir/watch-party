@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Party</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="input-container">
+        <input type="text" id="videoUrl" placeholder="Enter video URL">
+        <button onclick="loadVideo()">Load Video</button>
+    </div>
+    <video id="videoPlayer" controls></video>
+    <div id="chat">
+        <div id="messages"></div>
+        <input type="text" id="chatInput">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
