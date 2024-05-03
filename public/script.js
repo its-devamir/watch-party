@@ -2,8 +2,9 @@ const videoPlayer = document.getElementById('videoPlayer');
 const messages = document.getElementById('messages');
 const chatInput = document.getElementById('chatInput');
 
-// Initialize WebSocket connection
-const ws = new WebSocket(`ws://${window.location.host}`);
+// Detect the protocol used to load the page and adjust WebSocket protocol accordingly
+const wsProtocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+const ws = new WebSocket(`${wsProtocol}//${window.location.host}`);
 
 ws.onmessage = function(event) {
     const data = JSON.parse(event.data);
